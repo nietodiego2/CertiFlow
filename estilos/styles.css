@@ -1,35 +1,363 @@
-*{
-    font-family:"Montserrat", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#hero h1{
-    font-size: 56px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
 }
 
-#hero p{
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* HEADER */
+
+.header {
+    background: #111827;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 190px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .activo {
+    color: #ff0f6f;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    padding: 120px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)),
+        radial-gradient(circle at top left, rgba(255, 15, 111, 0.35), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.35), transparent 35%);
+    color: white;
+}
+
+.hero-contenido {
+    max-width: 850px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #ff0f6f;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.btn-principal {
+    background: linear-gradient(135deg, #ff0f6f, #8b5cf6);
+    color: white;
+}
+
+.btn-secundario {
+    border: 1px solid #94a3b8;
+    color: white;
+}
+
+/* SECCIONES */
+
+.seccion {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+h1,
+h2,
+h3 {
+    color: #0f172a;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.grid-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+figure img,
+.seccion img {
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+}
+
+figcaption {
+    margin-top: 12px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* HERO INTERNO */
+
+.hero-interno {
+    padding: 100px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)),
+        radial-gradient(circle at top left, rgba(255, 15, 111, 0.35), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.35), transparent 35%);
+    color: white;
+}
+
+.hero-interno h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-interno p {
+    color: #cbd5e1;
     font-size: 20px;
 }
 
-h2{
-    font-size: 36px;
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
 }
 
-h3{
-    font-size: 22px;
+.cards.columna {
+    flex-direction: column;
 }
 
-p{
-    font-size: 16px;
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-nav{
-    background-color: #57D6B1;
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
 }
-header{
-    color: #ffffff;
-    background-color: #0F172A;
+
+.card h3 {
+    color: #111827;
 }
-footer{
-    text-size: 14px;
-    color: #ffffff;
-    background-color: #0F172A;
+
+.card p {
+    color: #64748b;
+}
+
+/* PASOS */
+
+.pasos {
+    max-width: 780px;
+    margin: auto;
+    list-style-position: inside;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.pasos li {
+    padding: 12px 0;
+    font-weight: 600;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.formulario h2 {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #334155;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff0f6f;
+    box-shadow: 0 0 0 3px rgba(255, 15, 111, 0.15);
+}
+
+button {
+    background: linear-gradient(135deg, #ff0f6f, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+
+.footer {
+    background: #111827;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 90px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-interno h1 {
+        font-size: 36px;
+    }
+
+    .grid-dos-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
 }
