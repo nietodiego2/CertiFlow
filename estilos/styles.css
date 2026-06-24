@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     background: #f8fafc;
     color: #1e293b;
     line-height: 1.6;
@@ -19,7 +19,7 @@ img {
 /* HEADER */
 
 .header {
-    background: #111827;
+    background: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -43,7 +43,7 @@ img {
 }
 
 .nav-links a {
-    color: #e5e7eb;
+    color: #111827;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
