@@ -361,3 +361,86 @@ button:hover {
         font-size: 30px;
     }
 }
+
+.buscador {
+    max-width: 520px;
+    margin: 0 auto 35px;
+    display: block;
+}
+
+.card strong {
+    display: block;
+    margin: 15px 0;
+    color: #ff0f6f;
+    font-size: 20px;
+}
+
+.carrito {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.carrito ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.carrito li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-eliminar {
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.mensaje {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.correcto {
+    color: #16a34a;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.modo-oscuro {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.modo-oscuro .header,
+.modo-oscuro .card,
+.modo-oscuro .formulario,
+.modo-oscuro .carrito,
+.modo-oscuro .pasos {
+    background: #111827;
+    color: #e5e7eb;
+    border-color: #334155;
+}
+
+.modo-oscuro h1,
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro label,
+.modo-oscuro .nav-links a {
+    color: #f8fafc;
+}
+
+.modo-oscuro p,
+.modo-oscuro figcaption,
+.modo-oscuro .card p {
+    color: #cbd5e1;
+}

@@ -40,19 +40,23 @@
                 <img src="../imagenes/soporte.png" alt="Especialista de soporte tecnológico atendiendo consultas de clientes">
             </div>
 
-            <form class="formulario">
+            <form class="formulario" id="formulario-soporte">
                 <h2>Enviar consulta</h2>
 
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
 
                 <label for="correo">Correo</label>
-                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 987 654 321">
 
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu consulta"></textarea>
 
                 <button type="submit">Enviar Consulta</button>
+                <p id="respuesta-formulario" class="mensaje"></p>
             </form>
         </section>
 
@@ -63,6 +67,7 @@
         <p>Atención y acompañamiento para nuestros usuarios.</p>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

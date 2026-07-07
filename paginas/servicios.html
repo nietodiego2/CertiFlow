@@ -35,24 +35,48 @@
             <p>Soluciones digitales para empresas que buscan seguridad, rapidez y eficiencia.</p>
         </section>
 
-        <section class="seccion grid-dos-columnas">
-            <img src="../imagenes/servicios.png" alt="Profesional utilizando una laptop para firmar documentos electrónicos">
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <span class="etiqueta">Servicios disponibles</span>
+                <h2>Elige una solución para tu empresa</h2>
+                <p>Busca un servicio y agrégalo a tu solicitud.</p>
+            </div>
 
-            <div class="cards columna">
-                <article class="card">
+            <input type="text" id="buscador" class="buscador" placeholder="Buscar servicio...">
+
+            <div class="cards">
+                <article class="card card-servicio" data-nombre="Firma Electrónica">
                     <h3>Firma Electrónica</h3>
                     <p>Firma documentos desde cualquier dispositivo de manera rápida y segura.</p>
+                    <strong>S/ 49</strong>
+                    <button class="btn-agregar" data-id="1">Agregar</button>
                 </article>
 
-                <article class="card">
+                <article class="card card-servicio" data-nombre="Validación de Identidad">
                     <h3>Validación de Identidad</h3>
                     <p>Verifica la autenticidad de cada firmante antes de completar el proceso.</p>
+                    <strong>S/ 35</strong>
+                    <button class="btn-agregar" data-id="2">Agregar</button>
                 </article>
 
-                <article class="card">
+                <article class="card card-servicio" data-nombre="Almacenamiento Seguro">
                     <h3>Almacenamiento Seguro</h3>
                     <p>Organiza y protege documentos electrónicos en un entorno confiable.</p>
+                    <strong>S/ 25</strong>
+                    <button class="btn-agregar" data-id="3">Agregar</button>
                 </article>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <span class="etiqueta">Solicitud</span>
+                <h2>Servicios agregados</h2>
+            </div>
+
+            <div class="carrito">
+                <ul id="lista-carrito"></ul>
+                <p>Total estimado: <strong id="total-carrito">S/ 0</strong></p>
             </div>
         </section>
 
@@ -63,6 +87,7 @@
         <p>Servicios digitales para empresas modernas.</p>
     </footer>
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
