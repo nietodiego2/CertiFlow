@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | CertiFlow</title>
-    <meta name="description" content="Servicios digitales de CertiFlow para firma electrónica, validación de identidad y almacenamiento seguro.">
+
+    <meta name="description"
+        content="Servicios digitales de CertiFlow para firma electrónica, validación de identidad y almacenamiento seguro.">
+
     <link rel="icon" href="../imagenes/favicon.png" type="image/png">
     <link rel="stylesheet" href="../estilos/styles.css">
 </head>
@@ -13,9 +16,11 @@
 <body>
 
     <header class="header">
+
         <nav class="navbar">
+
             <a href="index.html" class="logo">
-                <img src="../imagenes/logo.png" alt="Logo de CertiFlow">
+                <img src="../imagenes/logo.png" alt="Logo CertiFlow">
             </a>
 
             <ul class="nav-links">
@@ -24,70 +29,178 @@
                 <li><a href="casosdenegocio.html">Casos de Negocio</a></li>
                 <li><a href="soporte.html">Soporte</a></li>
             </ul>
+
+            <button id="cambiar-tema" class="btn-tema" type="button">
+                Modo oscuro
+            </button>
+
         </nav>
+
     </header>
 
     <main>
 
         <section class="hero-interno">
-            <span class="etiqueta">Servicios</span>
-            <h1>Nuestros Servicios</h1>
-            <p>Soluciones digitales para empresas que buscan seguridad, rapidez y eficiencia.</p>
+
+            <span class="etiqueta">
+                Servicios
+            </span>
+
+            <h1>
+                Nuestros Servicios
+            </h1>
+
+            <p>
+                Soluciones digitales para empresas que buscan seguridad,
+                rapidez y eficiencia.
+            </p>
+
         </section>
 
         <section class="seccion">
+
             <div class="titulo-seccion">
-                <span class="etiqueta">Servicios disponibles</span>
-                <h2>Elige una solución para tu empresa</h2>
-                <p>Busca un servicio y agrégalo a tu solicitud.</p>
+
+                <span class="etiqueta">
+                    Servicios disponibles
+                </span>
+
+                <h2>
+                    Elige una solución para tu empresa
+                </h2>
+
+                <p>
+                    Busca un servicio y agrégalo a tu solicitud.
+                </p>
+
             </div>
 
-            <input type="text" id="buscador" class="buscador" placeholder="Buscar servicio...">
+            <input
+                type="text"
+                id="buscador"
+                class="buscador"
+                placeholder="Buscar servicio...">
 
             <div class="cards">
-                <article class="card card-servicio" data-nombre="Firma Electrónica">
+
+                <article
+                    class="card card-servicio"
+                    data-nombre="Firma Electrónica">
+
                     <h3>Firma Electrónica</h3>
-                    <p>Firma documentos desde cualquier dispositivo de manera rápida y segura.</p>
+
+                    <p>
+                        Firma documentos desde cualquier dispositivo
+                        de manera rápida y segura.
+                    </p>
+
                     <strong>S/ 49</strong>
-                    <button class="btn-agregar" data-id="1">Agregar</button>
+
+                    <button class="btn-agregar" data-id="1">
+                        Agregar
+                    </button>
+
                 </article>
 
-                <article class="card card-servicio" data-nombre="Validación de Identidad">
+                <article
+                    class="card card-servicio"
+                    data-nombre="Validación de Identidad">
+
                     <h3>Validación de Identidad</h3>
-                    <p>Verifica la autenticidad de cada firmante antes de completar el proceso.</p>
+
+                    <p>
+                        Verifica la autenticidad de cada firmante
+                        antes de completar el proceso.
+                    </p>
+
                     <strong>S/ 35</strong>
-                    <button class="btn-agregar" data-id="2">Agregar</button>
+
+                    <button class="btn-agregar" data-id="2">
+                        Agregar
+                    </button>
+
                 </article>
 
-                <article class="card card-servicio" data-nombre="Almacenamiento Seguro">
+                <article
+                    class="card card-servicio"
+                    data-nombre="Almacenamiento Seguro">
+
                     <h3>Almacenamiento Seguro</h3>
-                    <p>Organiza y protege documentos electrónicos en un entorno confiable.</p>
+
+                    <p>
+                        Organiza y protege documentos electrónicos
+                        en un entorno confiable.
+                    </p>
+
                     <strong>S/ 25</strong>
-                    <button class="btn-agregar" data-id="3">Agregar</button>
+
+                    <button class="btn-agregar" data-id="3">
+                        Agregar
+                    </button>
+
                 </article>
+
             </div>
+
         </section>
 
         <section class="seccion">
+
             <div class="titulo-seccion">
-                <span class="etiqueta">Solicitud</span>
-                <h2>Servicios agregados</h2>
+
+                <span class="etiqueta">
+                    Carrito
+                </span>
+
+                <h2>
+                    Servicios seleccionados
+                </h2>
+
             </div>
 
             <div class="carrito">
+
                 <ul id="lista-carrito"></ul>
-                <p>Total estimado: <strong id="total-carrito">S/ 0</strong></p>
+
+                <p>
+                    Total estimado:
+                    <strong id="total-carrito">
+                        S/ 0
+                    </strong>
+                </p>
+
+                <button
+                    id="btn-comprar"
+                    class="btn btn-principal"
+                    type="button">
+
+                    Comprar
+
+                </button>
+
+                <p
+                    id="mensaje-compra"
+                    class="mensaje">
+                </p>
+
             </div>
+
         </section>
 
     </main>
 
     <footer class="footer">
+
         <p>&copy; 2026 CertiFlow</p>
-        <p>Servicios digitales para empresas modernas.</p>
+
+        <p>
+            Servicios digitales para empresas modernas.
+        </p>
+
     </footer>
 
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>
